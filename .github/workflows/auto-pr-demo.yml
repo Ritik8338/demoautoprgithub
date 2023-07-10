@@ -12,9 +12,6 @@ jobs:
       - name: checking out code
         uses: actions/checkout@v2
 
-      - name: extract git commit data
-        uses: demoautoprgithub/git-commit-action@v1.x
-
       - name: Raise PR
         uses: demoautoprgithub/create-pull-request@v3
         with:
