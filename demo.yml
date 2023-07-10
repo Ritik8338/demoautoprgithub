@@ -1,0 +1,17 @@
+name: demo to setup a project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checking out code
+        uses: actions/checkout@v2
+
+      - name: my-step
+        run: echo "Hello Ritik"
